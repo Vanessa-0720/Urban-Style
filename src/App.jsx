@@ -1,11 +1,19 @@
 import "./App.css";
 import Layout from "./components/Layout";
-import Vitrine from "./components/Vitrine";
+import { Routes, Route } from "react-router-dom";
+
+import Home from "./pages/Home";
+import Detalhe from "./pages/Detalhe";
+import NaoEncontrado from "./pages/NaoEncontrado";
 
 function App() {
   return (
     <Layout>
-      <Vitrine />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/produto/:id" element={<Detalhe />} />
+        <Route path="*" element={<NaoEncontrado />} />
+      </Routes>
     </Layout>
   );
 }

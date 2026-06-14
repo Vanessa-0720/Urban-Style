@@ -71,3 +71,23 @@ button:hover {
   padding: 20px;
   margin-top: 30px;
 }
+
+.filtros {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: flex-start;
+}
+
+.filtros input,
+.filtros select {
+  padding: 8px;
+  border-radius: 6px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  width: 100%;
+}

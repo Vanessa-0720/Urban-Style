@@ -4,14 +4,16 @@ import Selo from "./Selo";
 function ProdutoCard({ produto }) {
   return (
     <div className="card">
-      {produto.freteGratis && (
+      {produto.price < 1000 && (
         <Selo texto="Frete Grátis" />
       )}
 
-      <h3>{produto.nome}</h3>
+  <img src={produto.thumbnail} alt={produto.title} />
+
+      <h3>{produto.title}</h3>
 
       <p>
-  {produto.preco.toLocaleString("pt-BR", {
+  {produto.price.toLocaleString("pt-BR", {
     style: "currency",
     currency: "BRL",
   })}

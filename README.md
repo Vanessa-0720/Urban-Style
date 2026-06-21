@@ -1,16 +1,97 @@
-# React + Vite
+# 🛍️ TADS Store
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Projeto Integrador TADS Store, desenvolvido como atividade final da disciplina de Desenvolvimento Front-End II com React.
 
-Currently, two official plugins are available:
+A TADS Store (nome: Urban Style) é uma loja virtual construída com React, consumindo API externa, utilizando componentização, roteamento SPA e autenticação simulada com Context API.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Tecnologias utilizadas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- React Router DOM
+- Context API
+- JavaScript (ES6+)
+- CSS3
+- API DummyJSON
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📦 Como executar o projeto
+
+1. Clone o repositório e instale as dependências:
+
+npm install
+
+2. Execute o projeto:
+
+npm run dev
+
+3. Abra no navegador esse link:
+
+http://localhost:5173
+
+4. Login de teste
+
+Para acessar a área protegida, digite:
+
+Usuário: aluno
+Senha: 1234
+
+5. Funcionalidades:
+✔ Componentização
+Layout com children
+Componentes reutilizáveis (Cabecalho, Rodape, Vitrine, ProdutoCard, Botao, Selo).
+
+✔ Consumo de API
+Produtos vindos da API DummyJSON
+useEffect para carregamento
+useState para controle de estado
+Loading durante carregamento
+
+✔ Busca e Filtros
+Filtro por nome do produto
+Filtro por categoria
+
+✔ Navegação SPA
+React Router configurado
+Página inicial (/)
+Página de detalhe (/produto/:id)
+Página de login (/login)
+Página de erro 404
+
+✔ Autenticação
+Login simulado com Context API
+Sessão de usuário
+Rota protegida (/minha-conta)
+Logout funcional
+Controle de visualização (Entrar/Sair)
+
+## 📁 Estrutura do projeto
+
+O projeto segue uma organização padrão com Vite + React:
+
+src/
+├── assets/         # imagens e arquivos estáticos
+├── componentes/    # componentes reutilizáveis da aplicação
+├── contexts/       # gerenciamento de estado global (Context API)
+├── pages/          # páginas principais da aplicação (rotas)
+├── App.jsx         # componente principal da aplicação
+├── App.css         # estilos do App
+├── index.css       # estilos globais
+└── main.jsx        # ponto de entrada da aplicação
+
+🎯 Objetivo do projeto:
+
+Aplicar os conceitos de React aprendidos em aula, incluindo:
+
+Componentização
+Hooks (useState, useEffect)
+Consumo de API
+React Router (SPA)
+Context API (autenticação)
+Organização de projeto
+
+👩‍💻 Autora: Vanêssa Pereira
+
+Projeto acadêmico desenvolvido para fins educacionais.

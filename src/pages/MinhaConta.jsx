@@ -15,7 +15,7 @@ function MinhaConta() {
       <h2>Minha Conta</h2>
 
       <p>
-        Bem-vindo, {usuario?.nome}!
+        Olá, {usuario?.nome}! Bem-vindo à Urban Style 👗
       </p>
 
       <button onClick={handleLogout}>
